@@ -1,0 +1,416 @@
+*  {
+    font-family: 'Bai Jamjuree';
+    word-spacing: 2px;
+}
+body {
+    margin: 0;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70px;
+    margin-bottom: 100px;
+    background-image: url(images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+}
+header h2 {
+    margin: 10px;
+    text-align: center;
+}
+header h5 {
+    text-align: center;
+    font-size: 15px;
+}
+.headings-subheadings {
+    width: 45%;
+    margin: 0 auto;
+    text-align: center;
+}
+.headings-subheadings h5 {
+    font-size: 15px;
+}
+.logo {
+    width: 5%;
+}
+.download-button-ios {
+    padding: 10px 25px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    background-color: hsl(171, 66%, 44%);
+    margin: 5px;
+    box-shadow: 0px 2px 0px hsl(171, 66%, 24%);
+    transition: 0.3s;
+    cursor: pointer;
+}
+.download-button-ios:hover {
+    box-shadow: 1px 3px 10px hsl(171, 66%, 44%);
+}
+.download-button-mac {
+    padding: 10px 25px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    background-color: hsl(233, 100%, 69%);
+    margin: 5px;
+    box-shadow: 0px 2px 0px hsl(233, 100%, 60%);
+    transition: 0.3s;
+    cursor: pointer;
+}
+.download-button-mac:hover {
+    box-shadow: 1px 3px 10px hsl(233, 100%, 69%);
+}
+.devices {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h2 {
+    color: hsl(210, 10%, 33%);
+}
+h3 {
+    color: hsl(210, 10%, 33%);
+    margin-bottom: 10px;
+}
+h4 {
+    color: hsl(210, 10%, 33%);
+}
+h5 {
+    color: hsl(201, 11%, 66%);
+    margin-top: 10px;
+}
+h6 {
+    color: hsl(201, 11%, 66%);
+}
+.product-features {
+    display: flex;
+}
+#computer-image {
+    position: relative;
+    right: 36px;
+    width: 100%;
+}
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    text-align: left;
+    padding-left: 55px;
+    padding-bottom: 60px;
+}
+.sidebar div {
+    width: 70%;
+}
+.product-tools {
+    display: flex;
+    margin: 65px;
+    justify-content: center;
+}
+.individual-tools-icons {
+    height: 25px;
+    margin-bottom: 25px;
+}
+.individual-tools {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 250px;
+    align-items: center;
+    text-align: center;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin: 0px 20px;
+}
+.individual-tools h3 {
+    margin: 8px 0px;
+}
+.individual-tools h5 {
+    margin: 8px 0px;
+}
+.company-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    justify-content: space-around;
+    width: 100%;
+}
+.download-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+    padding-top: 10px;
+    border-top: 1px solid rgb(199, 199, 199);
+}
+footer .logo {
+    width: 50px;
+    height: 50px;
+    margin: 0px 150px 0px 50px;
+}
+.link-section {
+    display: flex;
+    justify-content: space-between;
+}
+.links {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 20px;
+}
+.links h4 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 3px;
+    margin-left: 3px;
+    width: 100%;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+    color:hsl(210, 10%, 33%)
+}
+a:hover {
+    color: hsl(171, 66%, 44%);
+}
+.social-media {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.social-media-icons {
+    cursor: pointer;
+    width: 30px;
+    transition: .2s;
+}
+.social-media-icons:hover {
+    fill: hsl(233, 100%, 49%);
+}
+@media screen and (max-width: 980px) {
+    .logo {
+        width: 25%;
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 70px;
+        margin-bottom: 100px;
+        background-image: url(images/bg-header-desktop.png);
+        background-repeat: no-repeat;
+    }
+    header h5 {
+        width: 90%;
+    }
+    .headings-subheadings {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .product-features {
+        display: flex;
+        flex-direction: column;
+    }
+    #computer-image {
+        position: relative;
+        right: 0;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .sidebar {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+        padding-left: 0px;
+        padding-bottom: 60px;
+    }
+    .sidebar div {
+        width: 60%;
+    }
+    .devices img {
+        width: 80%;
+    }
+    .company-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 60px;
+    }
+    .company-logo {
+        margin: 30px 0px 0px 10px;
+    }
+    .download-section {
+        margin-top: 50px;
+    }
+    .download-section  h5{
+        width: 80%;
+        text-align: center;
+    }
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 50px;
+        width: 100%;
+    }
+    footer .logo {
+        width: 50px;
+        height: 50px;
+        margin: 0px 40px 0px 50px;
+    }
+    .links {
+        display: flex;
+        align-items: center;
+    }
+    .links h4 {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-right: 3px;
+        margin-left: 3px;
+        width: 80%;
+        text-align: center;
+    }
+    a {
+        text-decoration: none;
+        color:hsl(210, 10%, 33%)
+    }
+    a:hover {
+        color: hsl(171, 66%, 44%);
+    }
+    .social-media {
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+    }
+}
+@media screen and (max-width: 620px) {
+    .logo {
+        width: 25%;
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 70px;
+        margin-bottom: 60px;
+        background-image: url(images/bg-header-desktop.png);
+        background-repeat: no-repeat;
+    }
+    header h5 {
+        width: 90%;
+    }
+    .headings-subheadings {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .download-buttons {
+        display: flex;
+        flex-direction: column;
+    }
+    .product-features {
+        display: flex;
+        flex-direction: column;
+    }
+    #computer-image {
+        position: relative;
+        right: 0;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .sidebar {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+        padding-left: 0px;
+        padding-bottom: 60px;
+    }
+    .sidebar div {
+        width: 60%;
+    }
+    .devices img {
+        width: 80%;
+    }
+    .product-tools {
+        flex-direction: column;
+        margin-bottom: 25px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .individual-tools {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 150px;
+        align-items: center;
+        text-align: center;
+        padding-right: 0px;
+        padding-left: 0px;
+        margin: 0px;
+    }
+    .individual-tools-icons {
+        height: 25%;
+        margin-bottom: 15px;
+    }
+    .individual-tools h3 {
+        margin: 8px 0px;
+    }
+    .individual-tools h5 {
+        margin: 8px 0px;
+    }
+    .company-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0px;
+    }
+    .company-logo {
+        margin: 30px 0px 0px 0px;
+    }
+    .download-section {
+        margin-top: 50px;
+    }
+    .download-section  h5{
+        width: 80%;
+        text-align: center;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 50px;
+        width: 100%;
+    }
+    .link-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    .links {
+        flex-direction: column;
+    }
+    footer .logo {
+        width: 35%;
+        margin-bottom: 20px;
+    }
+    .links h4 {
+        width: 100%;
+        text-align: center;
+    }
+    .social-media {
+        display: flex;
+        width: 100%;
+        margin-top: 20px;
+        justify-content: center;
+        gap: 50px;
+    }
+}
